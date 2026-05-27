@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contacto SaludNova</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef5fa;
+}
+
+.marquesina{
+    width:100%;
+    background:#006fa3;
+    color:white;
+    padding:12px;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.marquesina span{
+    display:inline-block;
+    padding-left:100%;
+    animation:mover 15s linear infinite;
+}
+
+@keyframes mover{
+
+    100%{
+        transform:translateX(-100%);
+    }
+
+}
+
+.header{
+    background:linear-gradient(135deg,#0096d6,#00bfff);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.header h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.header p{
+    font-size:20px;
+}
+
+.menu{
+    width:95%;
+    margin:auto;
+    margin-top:-25px;
+    background:white;
+    border-radius:25px;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    box-shadow:0 8px 18px rgba(0,0,0,0.1);
+}
+
+.boton{
+    border:none;
+    background:linear-gradient(135deg,#0096d6,#00b7ff);
+    color:white;
+    width:180px;
+    height:55px;
+    border-radius:15px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.boton:hover{
+    transform:translateY(-5px);
+}
+
+.contacto{
+    width:90%;
+    margin:60px auto;
+    background:white;
+    border-radius:25px;
+    padding:50px;
+    text-align:center;
+    box-shadow:0 8px 18px rgba(0,0,0,0.08);
+}
+
+.contacto h1{
+    color:#0096d6;
+    margin-bottom:25px;
+    font-size:40px;
+}
+
+.contacto p{
+    margin:18px 0;
+    font-size:18px;
+    color:#555;
+}
+
+.contacto i{
+    color:#0096d6;
+    margin-right:10px;
+}
+
+.mapa-imagen{
+    width:100%;
+    margin-top:35px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 18px rgba(0,0,0,0.1);
+}
+
+.mapa-imagen img{
+    width:100%;
+    height:550px;
+    object-fit:cover;
+    display:block;
+}
+
+.redes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:35px;
+}
+
+.redes a{
+    text-decoration:none;
+    color:white;
+    background:#0096d6;
+    padding:15px 22px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.redes a:hover{
+    background:#006fa3;
+    transform:translateY(-5px);
+}
+
+.footer{
+    background:#0096d6;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:50px;
+}
+
+.footer h2{
+    margin-bottom:15px;
+}
+
+.umg{
+    width:220px;
+    height:auto;
+    border-radius:20px;
+    background:white;
+    padding:10px;
+    margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<audio autoplay loop controls style="width:100%;">
+<source src="musica.mp3" type="audio/mp3">
+</audio>
+
+<div class="marquesina">
+
+<span>
+Carnet: 0900-25-12345 | Nombre: Celso Brooks
+</span>
+
+</div>
+
+<div class="header">
+
+<h1>Contáctanos</h1>
+
+<p>
+Estamos para servirte
+</p>
+
+</div>
+
+<div class="menu">
+
+<button class="boton"
+onclick="window.location.href='index.html'">
+
+Inicio
+
+</button>
+
+<button class="boton"
+onclick="window.location.href='productos.html'">
+
+Productos
+
+</button>
+
+</div>
+
+<div class="contacto">
+
+<h1>Información de Contacto</h1>
+
+<p>
+<i class="fas fa-phone"></i>
+5555-5555
+</p>
+
+<p>
+<i class="fas fa-envelope"></i>
+saludnova@gmail.com
+</p>
+
+<p>
+<i class="fas fa-location-dot"></i>
+Ciudad de Guatemala
+</p>
+
+<div class="mapa-imagen">
+
+<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/d6/84/46/d684460f-463d-a625-a58a-ff51649b8842/pr_source.png/750x750bb.jpeg">
+
+</div>
+
+<div class="redes">
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+Instagram
+</a>
+
+<a href="#">
+<i class="fab fa-facebook-f"></i>
+Facebook
+</a>
+
+<a href="#">
+<i class="fab fa-tiktok"></i>
+TikTok
+</a>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<h2>SaludNova</h2>
+
+<p>
+"Y conoceréis la verdad y la verdad os hará libres"
+</p>
+
+<img src="umg.jpg" class="umg">
+
+</div>
+
+</body>
+</html>
